@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trello Board</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      h1 {
+        text-align: center;
+        background-color: rgb(33, 170, 180);
+        width: auto;
+        color: white;
+        opacity: 80%;
+      }
+      #secondmenu {
+        text-align: left;
+        margin-bottom: 20px;;
+        background-color: rgb(33, 170, 180);
+        width: auto;
+        color: white;
+        opacity: 50%;
+      }
+      .board {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+      }
+      .list {
+        background-color: #dfe3e6;
+        width: 200px;
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        align-self: flex-start;
+      }
+      .card {
+        background-color: white;
+        padding: 2px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+      .card:hover {
+        background-color: yellow;
+      }
+      .addcard:hover {
+        background-color: yellow;
+      }
+      input#title {
+        background-color: white;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        height: 60px;
+        margin: 0;
+        border-style: hidden;
+        word-wrap: normal;
+      }
+    </style>
+  </head>
+  <body background="https://cdn.pixabay.com/photo/2013/12/17/20/10/bubbles-230014__480.jpg">
+    <div>
+      <i class="fa-light fa-house"></i>
+      <h1>Tralala</h1>
+    </div>
+    <div>
+      <div id="secondmenu">Frontend Training</div>
+    </div>
+    <div class="board">
+      <div class="list">
+        <h3>To Do</h3>
+        <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+          <p>Learn HTML</p>
+        </div>
+        <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+          <p>Learn CSS</p>
+        </div>
+        <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+          <p>Learn JavaScript</p>
+        </div>
+        <div onclick="location.href='#';" style="cursor: pointer;">
+          <p class="addcard">+ Add another card</p>
+        </div>
+      </div>
+      <div class="list">
+        <h3>Doing</h3>
+        <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+          <p>Prepare resume</p>
+        </div>
+        <div class="card">
+          <input type="text" id="title" name="cardtitle" placeholder="Enter a title for this card..." />
+        </div>
+        <div>
+          <p>
+            <button onclick="location.href='#';" style="padding: 5px; font-size: 90%; background-color: rgb(118, 141, 54); border-radius: 5px; border-style: none; color: whitesmoke; cursor: pointer;">Add Card</button>
+            <button type="button" onclick="alert('This will remove the added card!!\nClick OK')" style="border-style: none; background-color: #dfe3e6; font-size: x-large; font-weight: bold; cursor: pointer;">x</button>
+          </p>
+        </div>
+      </div>
+      <div class="list">
+        <h3>Testing/Verifying</h3>
+        <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+          <p>Twitter app frontend</p>
+        </div>
+        <div onclick="location.href='#';" style="cursor: pointer;">
+          <p class="addcard">+ Add another card</p>
+        </div>
+      </div>
+      <div class="list">
+        <h3>Deploying</h3>
+        <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+          <p>Twitter app frontend</p>
+        </div>
+        <div onclick="location.href='#';" style="cursor: pointer;">
+          <p class="addcard">+ Add another card</p>
+        </div>
+      </div>
+      <div class="list">
+        <h3>Done</h3>
+        <div onclick="location.href='#';" style="cursor: pointer;">
+          <p class="addcard">+ Add another card</p>
+        </div>
+      </div>
+      <div class="list">
+        <div onclick="location.href='#';" style="cursor: pointer;">
+          <p class="addcard">+ Add another card</p>
+        </div>
+      </div>
+      <div class="list">
+        <div class="card">
+          <input type="text" id="title" name="listtitle" placeholder="Enter a list title..." />
+        </div>
+        <div>
+          <p>
+            <button onclick="location.href='#';" style="padding: 5px; font-size: 90%; background-color: rgb(118, 141, 54); border-radius: 5px; border-style: none; color: whitesmoke; cursor: pointer;">Add Card</button>
+            <button type="button" onclick="alert('This will remove the added card!!\nClick OK')" style="border-style: none; background-color: #dfe3e6; font-size: x-large; font-weight: bold; cursor: pointer;">x</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
